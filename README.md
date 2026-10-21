@@ -124,7 +124,7 @@ The orbit grows at $T$-count 2. The next section is about whether any of those n
 Global phase is not a physical difference, so the comparison of two gates is the process fidelity
 
 $$
-F(U,V)=\frac14\bigl|\operatorname{Tr}(U^\dagger V)\bigr|^2.
+F(U,V)=\frac{1}{4}\left|\mathrm{Tr}(U^{\dagger} V)\right|^{2}.
 $$
 
 $F=1$ exactly when $V=e^{i\alpha}U$. Removing that phase, $U^\dagger V$ is a Bloch rotation by some angle $\delta\in[0,\pi]$, and

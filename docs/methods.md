@@ -18,10 +18,10 @@ $$
 U_3(\theta,\varphi,\lambda)=\begin{pmatrix}\cos(\theta/2)&-e^{i\lambda}\sin(\theta/2)\\e^{i\varphi}\sin(\theta/2)&e^{i(\varphi+\lambda)}\cos(\theta/2)\end{pmatrix}.
 $$
 
-Applied to $\lvert 0\rangle$,
+Applied to $|0\rangle$,
 
 $$
-U_3(\theta,\varphi,\lambda)\lvert 0\rangle=\cos(\theta/2)\lvert 0\rangle+e^{i\varphi}\sin(\theta/2)\lvert 1\rangle,
+U_3(\theta,\varphi,\lambda)|0\rangle=\cos(\theta/2)|0\rangle+e^{i\varphi}\sin(\theta/2)|1\rangle,
 $$
 
 which does not depend on $\lambda$. The third angle shows up for any state with
@@ -50,7 +50,7 @@ $H T^k H$ is $R_x(k\pi/4)$ up to the phase $e^{ik\pi/8}$.
 The process fidelity of two single-qubit unitary channels is
 
 $$
-F(U,V)=\frac{1}{4}\lvert\operatorname{Tr}(U^\dagger V)\rvert^2.
+F(U,V)=\frac{1}{4}\left|\mathrm{Tr}(U^{\dagger} V)\right|^{2}.
 $$
 
 $F=1$ if and only if $V=e^{i\alpha}U$. Removing that phase, the relative gate
@@ -76,7 +76,7 @@ is included without a separate generator, because $T^\dagger=S^3 T$ and $S^3$ is
 Clifford. $S=T^2$ is Clifford as well, so it is not charged as two $T$ gates.
 
 Gates are identified by the rotation they induce on the Bloch sphere,
-$R_{ba}=\tfrac12\operatorname{Tr}(\sigma_b U\sigma_a U^\dagger)$, which is blind
+$R_{ba}=\frac{1}{2}\mathrm{Tr}(\sigma_b U\sigma_a U^{\dagger})$, which is blind
 to global phase. The enumeration is breadth-first in $t$, so the recorded
 $T$-count is minimal. Each reported word is one such factorization; its
 Clifford factors are shortest words in $H$ and $S$. Up to the budgets used in
