@@ -190,3 +190,7 @@ T H T H S T H T H S T H T H T
 and that word is still optimal at $T$-count 12. Five further $T$ gates, and a group that has grown from 9,168 elements to 294,864, do not produce a closer gate for this angle. At the top of the budget the worst angle on the circle is $6.93^\circ$ and the median is $3.72^\circ$. The rotations $R_x(k\pi/4)$ have been exact since the first $T$. Everything else, including the midpoint that the $\pi/4$ ladder was built to approach, is still a residual rotation of the Bloch sphere.
 
 The figures and the table are produced by `python -m clifford_t.study`.
+
+## The fixed-angle checks
+
+The enumeration is the exhaustive form of six PennyLane scripts in [labs/](labs/). Each one holds an angle or a named gate fixed and prints a state, a fidelity, or a Bloch vector. `Lab-puertaT.py` checks $R_x(\pi/4)=HTH$. `Lab-Clifford+T.py` compares $R_x(\pi/8)$ with the word $HTS^{\dagger}TH$. `Lab-U3.py` and the two `Lab-U3-HTScomp` scripts are the $U_3$ and named-gate comparisons drawn above. `Lab-norma.py` normalizes a two-qubit state from the same notebook folder. Install them with `pip install -e ".[labs]"`.
